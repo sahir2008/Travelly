@@ -317,3 +317,16 @@ footer ul {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 587px) {
+  .form-wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .form-wrapper {
+    width: 90%;
+  }
+}
+
