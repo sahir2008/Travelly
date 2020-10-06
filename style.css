@@ -305,3 +305,15 @@ footer ul {
     flex: 1 1 10rem;
   }
 }
+
+@media screen and (max-width: 338px) {
+  .form-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 254px) {
+  .form-wrapper {
+    width: 100%;
+  }
+}
