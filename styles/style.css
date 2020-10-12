@@ -1,0 +1,452 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #131c27;
+}
+
+/* Nav bar and Hero Section */
+.main-head {
+  background: #131c27;
+  color: white;
+}
+
+.main-head nav {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.main-head #logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+.hero {
+  min-height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/landing-page.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* Locations Section */
+#locations {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/new-york-page.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/new-york-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#locations .locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+#locations .locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
+
+#locations .locations-head h3 {
+  padding: 4rem 0rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131c27), to(#663b34));
+  background: linear-gradient(#131c27, #663b34);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  pointer-events: none;
+}
+
+.moving-cloud-1 {
+  -webkit-animation: cloudAnimation 2.5s infinite alternate ease-in-out;
+          animation: cloudAnimation 2.5s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+  top: 10%;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+          animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+/* Benefits Section */
+.benefits-head {
+  background: #343c44;
+  color: white;
+  text-align: center;
+  padding: 3rem 0rem;
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits-head h3 {
+  padding: 1rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.cards .card {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+.cards .card h4,
+.cards .card p {
+  padding: 1rem;
+}
+
+.card-icon {
+  background: #27394e;
+}
+
+/* Contact Section */
+#contact {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/contact-mountain.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/contact-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-from {
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  background: #131c27;
+  color: white;
+}
+
+footer h3 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* Accessibility  */
+button:focus {
+  background: #2b3f57;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 1px;
+}
+
+/* Media Query */
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    width: 100vw;
+  }
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30rem;
+            flex: 1 1 30rem;
+    line-height: 2;
+  }
+  footer {
+    text-align: center;
+  }
+  footer ul {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  html {
+    font-size: 25%;
+  }
+  .cloud {
+    width: 100vw;
+  }
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+}
+
+@media (min-width: 951px) {
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 10rem;
+            flex: 1 1 10rem;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .form-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 254px) {
+  .form-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .form-wrapper {
+    width: 90%;
+  }
+  .card {
+    line-height: 3;
+  }
+}
+/*# sourceMappingURL=style.css.map */

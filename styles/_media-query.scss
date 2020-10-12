@@ -1,0 +1,65 @@
+/* Media Query */
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    width: 100vw;
+  }
+  .card {
+    flex: 1 1 30rem;
+    line-height: 2;
+  }
+  footer {
+    text-align: center;
+  }
+  footer ul {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  html {
+    font-size: 25%;
+  }
+  .cloud {
+    width: 100vw;
+  }
+  .card {
+    flex: 1 1 40rem;
+  }
+}
+
+@media (min-width: 951px) {
+  .card {
+    flex: 1 1 10rem;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .form-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 254px) {
+  .form-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .form-wrapper {
+    width: 90%;
+  }
+  .card {
+    line-height: 3;
+  }
+}
